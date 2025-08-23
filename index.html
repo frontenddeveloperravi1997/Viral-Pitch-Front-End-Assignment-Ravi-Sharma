@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
+    <!--wizhard container-->
+    <div class="wizhard-container">
+      <!--dashboard menu-->
+      <div class="wiz-col-1">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand logo-area" href="#">
+              <img src="asset/images/logo.PNG" alt="logo" class="logo" />
+            </a>
+            
+            <div class="border-saparation"></div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <img src="asset/images/icon-1.PNG" alt="icon-1" /> Dashboard
+                  </a>                    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <img src="asset/images/icon-2.PNG" alt="icon-1" /> Chats
+                  </a>                    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <img src="asset/images/icon-3.PNG" alt="icon-1" /> Contact list
+                  </a>                    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><img src="asset/images/icon-4.PNG" alt="icon-1" /> Template</a>                    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><img src="asset/images/icon-5.PNG" alt="icon-5" /> Manage users</a>                    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><img src="asset/images/icon-6.PNG" alt="icon-6" /> Reports</a>                    
+                </li>  
+                 <li class="mobile-specific">
+                  <a class="nav-link active" aria-current="page" href="#"></a>
+                    <img src="asset/images/user-icon.PNG" alt="user-icon" /> </a
+                  >
+                </li>              
+              </ul>
+            </div>            
+          </div>
+
+          <div class="desktop-specific user-icon">
+                  <a class="nav-link active" aria-current="page" href="#"></a>
+                    <img src="asset/images/user-icon.PNG" alt="user-icon" /> </a
+                  >
+            </div>
+
+           
+        </nav>
+      </div>
+      <!--dashboard menu-->
+
+      <!--add template-->
+      <div class="wiz-col-2">
+        <h2 class="col-2-heading">Add template</h2>
+
+        <div class="border-saparation-col-2">
+              
+        </div>
+
+        <form class="template-form" method="post" action="#">
+          
+            <label for="exampleInputEmail1" class="form-label">Template Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Give new template a name">         
+          
+            <div class="dropdown template-dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose category 
+                <img src="asset/images/down-arrow-icon.PNG" alt="icon" class="dropdown-icon" />
+              </button>
+              <ul class="dropdown-menu">
+                  <label class="radio-option">
+                    <input type="radio" name="contentType" value="none" checked>
+                    None
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="contentType" value="text">
+                    Text
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="contentType" value="media">
+                    Media
+                  </label>
+              </ul>
+            </div>
+
+            <div class="search-bar">
+              <label for="searchLanguage" class="form-label">Language</label>
+              <input type="text" class="form-control" id="searchLanguage" aria-describedby="emailHelp" placeholder="Give new template a name">         
+              <img src="asset/images/search-icon.PNG" alt="search" class="search-icon" />
+            </div>
+            
+            <span class="lang-name">English &times;</span>
+        </form>
+      </div>
+      <!--add template-->
+
+      <!--setup template-->
+      <div class="wiz-col-3">
+        <div class="setup-top">
+          <h3 class="setup-header">Setup Template</h3>
+          <button type="button" class="btn-setup">Base class</button>
+        </div>
+
+        <div class="border-saparation"></div>
+
+        <div class="setup-optional">
+          <div class="setup-optional-left">
+            <h4>Header <span>(Optional)</span></h4>
+            <p>Add a title or choose which type of media you’ll use for this header.</p>
+          </div>
+          <div class="setup-optional-right">
+            <div class="dropdown setup-dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                None
+                <img src="asset/images/none-down.PNG" alt="icon" class="none-down" />
+              </button>
+              <ul class="dropdown-menu">
+                <lNone><input type="radio" name="category" value="Utility"> None</lNone>
+                <label><input type="radio" name="category" value="Authentication"> Authentication</label>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-body">
+          <div class="form-group">
+  <!-- Label -->
+  <label for="message-body" class="form-label">Body</label>
+  <p class="form-helper">Enter the text for your message in the language that you've selected.</p>
+
+  <!-- Input Wrapper -->
+  <div class="rich-input" data-maxlength="1024">
+    <!-- Toolbar -->
+    <div class="ri-toolbar" role="toolbar" aria-label="Text formatting" aria-controls="message-body">
+      <button type="button" class="ri-btn" aria-label="Bold" data-action="bold"><img src="asset/images/ri-icon-1.PNG"  class="ri-icons"/></button>
+      <button type="button" class="ri-btn" aria-label="Italic" data-action="italic"><img src="asset/images/ri-icon-2.PNG"  class="ri-icons"/></button>
+      <button type="button" class="ri-btn" aria-label="Strikethrough" data-action="strike"><img src="asset/images/ri-icon-3.PNG"  class="ri-icons"/></button>
+      <button type="button" class="ri-btn" aria-label="Insert code" data-action="code"><img src="asset/images/ri-icon-4.PNG"  class="ri-icons"/></button>
+      <button type="button" class="ri-btn" aria-label="Insert emoji" data-action="emoji"><img src="asset/images/ri-icon-5.PNG"  class="ri-icons"/></button>
+
+      <!-- Character Counter -->
+      <span class="ri-counter" id="ri-counter">0/1024</span>
+    </div>
+
+    <!-- Textarea -->
+    <textarea
+      id="message-body"
+      class="ri-textarea"
+      placeholder="Enter text in english"
+      maxlength="1024"
+      aria-describedby="ri-counter"
+    ></textarea>
+  </div>
+</div>
+
+        </div>
+        
+      <!--set up footer-->
+      <div class="setup-footer">
+        <h4>Footer</h4>
+        <p>Add a short line of text to bottom of your message template, if you add the marketing opt-out button, the associated footer will be shown here by default.</p>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter text in english">
+      </div>      
+      <!--set up footer-->
+
+
+      <!--set up buttons-->
+      <div class="setup-button">
+        <h4 class="setup-button-header">Buttons <span>(Optional)</span></h4>
+        <p>Create buttons that let customers respond to your message or take action.</p>
+        <button type="button" class="btn">+ Add a button</button>
+
+        <div class="info-box">
+          <img src="asset/images/info-icon.PNG" alt="info" class="info-icon" />
+          <span>If you will add more than 1 button, they will appear in a list</span>
+        </div>
+      </div>      
+      <!--set up buttons-->
+
+      </div><!--wiz-col-3-->
+
+     
+      
+      <!--setup template-->
+
+      <!--template preview-->
+      <div class="wiz-col-4">
+        <h4>Template Preview</h4>
+         <div class="border-saparation"></div>
+
+         <div class="template-content">
+            <img src="asset/images/copy-icon.PNG" alt="copy-icon">
+            <span>04:32 pm</span>
+
+            <img src="asset/images/dummy-img.PNG" class="dummy-img">
+         </div>
+      </div>
+      <!--template preview-->
+    </div>
+    <!--wizhard container-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
