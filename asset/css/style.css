@@ -11,7 +11,7 @@ body {
 }
 
 .wiz-col-1 {
-  width: 131.56px;
+  width: 9.13%;
   position: relative;
   height: 140vh;
   padding: 24px 16px;
@@ -25,7 +25,7 @@ body {
 }
 
 .wiz-col-2 {
-  width: 344px;
+  width: 23.88%;
   border: 1px solid #fbfbfb;
   background: #fff;
   padding: 24px 16px;
@@ -33,7 +33,7 @@ body {
 }
 
 .wiz-col-3 {
-  width: 596.44px;
+  width: 41.41%;
   background: #fff;
   padding: 24px 16px;
   border: 1px solid #fbfbfb;
@@ -41,7 +41,7 @@ body {
 }
 
 .wiz-col-4 {
-  width: 344px;
+  width: 23.88%;
   background: #fff;
   border: 1px solid #fbfbfb;
   padding: 24px 16px;
@@ -451,7 +451,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .template-content span {
